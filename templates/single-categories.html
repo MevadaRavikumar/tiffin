@@ -1,0 +1,220 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to the Tiffin-Box</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- nav bar started -->
+        <nav id="header-nav" class="navbar navbar-default">  
+            <div class="container">
+                <div class="navbar-header" >
+                    <!-- logo -->
+                    <a href="{% url 'index' %}" class="pull-left visible-md visible-lg"><img src="{% static './images/tiffine-logo.png' %}"></a>
+                    </a>
+                    <!-- brand -->
+                    <div class="navbar-brand">
+					<a href="{% url 'index' %}"><h1>The Tiffin Box</h1></a>
+                    </div>
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="{% url 'menu_categories' %}"><span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+                            </li>
+                            <li id="phone" class="hidden-xs">
+                                <a href="tel:0176 690 01315">0176-690-01315</a><div>* We Deliver</div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div id="call-btn" class="text-center visible-xs"><a class="btn" href="tel:0176-690-01315"><span class="glyphicon glyphicon-earphone"></span>0176-690-01315</a></div>
+			<div id="xs-deliver" class="text-center visible-xs">* We deliver</div>	
+        </nav>
+        <!-- nav bar ended -->
+    </header>
+     <!-- single elements -->
+    <div id="main-item" class="container">
+            <h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
+            <div class="text-center">The lunch is not served until after 12 am.</div>
+    
+            <section class="row">
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D01</div>
+                                <img class="img-resposive" width="250" height="150" src="{% static './images/jambo-1.jpeg' %}" alt="Item">
+                            </div>
+                            <div class="menu-item-price">10.95 <span>(pint) </span>, 14.50<span> (quart)</span></div>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h3 class="menu-item-name">Mix Dal</h3>
+                            <p class="menu-item-details">Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder.Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder.Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder.Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder.Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder. </p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">		
+                </div>
+    
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D02</div>
+                                <img class="img-resposive" width="250" height="150" src="{% static './images/jambo-1.jpeg' %}" alt="Item">
+                            </div>
+                            <div class="menu-item-price">10.95 <span>(pint) </span>, 14.50<span> (quart)</span></div>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h3 class="menu-item-name">Mix Dal</h3>
+                            <p class="menu-item-details">Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder. </p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">		
+                </div>
+                <div class="clearfix visible-md-block visible-lg-block"></div>
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D03</div>
+                                <img class="img-resposive" width="250" height="150" src="{% static './images/jambo-1.jpeg' %}" alt="Item">
+                            </div>
+                            <div class="menu-item-price">10.95 <span>(pint) </span>, 14.50<span> (quart)</span></div>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h3 class="menu-item-name">Mix Dal</h3>
+                            <p class="menu-item-details">Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder. </p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">		
+                </div>
+    
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D04</div>
+                                <img class="img-resposive" width="250" height="150" src="{% static './images/jambo-1.jpeg' %}" alt="Item">
+                            </div>
+                            <div class="menu-item-price">10.95 <span>(pint) </span>, 14.50<span> (quart)</span></div>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h3 class="menu-item-name">Mix Dal</h3>
+                            <p class="menu-item-details">Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder. </p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">		
+                </div>
+                <div class="clearfix visible-md-block visible-lg-block"></div>
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D05</div>
+                                <img class="img-resposive" width="250" height="150" src="{% static './images/jambo-1.jpeg' %}" alt="Item">
+                            </div>
+                            <div class="menu-item-price">10.95 <span>(pint) </span>, 14.50<span> (quart)</span></div>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h3 class="menu-item-name">Mix Dal</h3>
+                            <p class="menu-item-details">Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder. </p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">		
+                </div>
+    
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D06</div>
+                                <img class="img-resposive" width="250" height="150" src="{% static './images/jambo-1.jpeg' %}" alt="Item">
+                            </div>
+                            <div class="menu-item-price">10.95 <span>(pint) </span>, 14.50<span> (quart)</span></div>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h3 class="menu-item-name">Mix Dal</h3>
+                            <p class="menu-item-details">Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder. </p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">		
+                </div>
+                <div class="clearfix visible-md-block visible-lg-block"></div>
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D07</div>
+                                <img class="img-resposive" width="250" height="150" src="{% static './images/jambo-1.jpeg' %}" alt="Item">
+                            </div>
+                            <div class="menu-item-price">10.95 <span>(pint) </span>, 14.50<span> (quart)</span></div>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h3 class="menu-item-name">Mix Dal</h3>
+                            <p class="menu-item-details">Boiled mung dal, tuar dal and chana dal, tampered with mustered seeds, green chilli, curry leaves, red chilli, corriander and turmeric powder. </p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">		
+                </div>
+    
+            </section>
+        </div>
+   
+    <!-- footer--> 
+    <footer class="panel-footer">
+            <div class="container">
+                <div class="row">
+                    <section id="hours" class="col-sm-4">
+                        <span>Hours:</span><br>
+                        <p>Monday-Friday: 10:00 am - 22:00 pm<br>
+                        Saturday: 10:00 am - 23:00 pm<br>
+                        Sunday: 12:00 am - 20 pm<br></p>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="address" class="col-sm-4">
+                        <span>Address:</span><br>
+                        Kreuzeck Straße 5<br>
+                        85354, Freising<br>
+                        Germany<br>
+                        <p>* Delivery area within 3-4 kilometers, with minimum order of 20 euro, outside that area 3 euro per delivery.</p>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="testimonials" class="col-sm-4">
+                        <p>"The best indian resturant in Freising, I have been to! And that's saying a lot, since I have been to many!"</p>
+                        <p>"Amazing food! Great and welcoming staf! Telented cook who knows what coustomer wants and how!"</p>
+                        <p>- Ravikumar Mevada (Food blogger as a hobby and profession)</p>
+                    </section>
+                </div>
+                <div class="text-center">&copy; Copyright The Tiffine Box 2019</div>
+            </div>
+        </footer>
+
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
