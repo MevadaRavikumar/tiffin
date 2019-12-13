@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to the Tiffin-Box</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- nav bar started -->
+        <nav id="header-nav" class="navbar navbar-default">  
+            <div class="container">
+                <div class="navbar-header" >
+                    <!-- logo -->
+                    <a href="index.html" class="pull-left visible-md visible-lg"><img src="./images/tiffine-logo.png"></a>
+                    </a>
+                    <!-- brand -->
+                    <div class="navbar-brand">
+					<a href="index.html"><h1>The Tiffin Box</h1></a>
+                    </div>
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="menu-categories.html"><span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+                            </li>
+                            <li id="phone" class="hidden-xs">
+                                <a href="tel:0176 690 01315">0176-690-01315</a><div>* We Deliver</div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div id="call-btn" class="text-center visible-xs"><a class="btn" href="tel:0176-690-01315"><span class="glyphicon glyphicon-earphone"></span>0176-690-01315</a></div>
+			<div id="xs-deliver" class="text-center visible-xs">* We deliver</div>	
+        </nav>
+        <!-- nav bar ended -->
+    </header>
+    <!-- main content--> 
+    <div id="main-item" class="container">
+        <div class="jumbotron">
+            <img src="./images/tiffine_background_1.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+        </div>    
+        <div id="home-time" class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="menu-categories.html"><div id="menu-tile"><span>Menu</span></div></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="single-categories.html"><div id="special-tile"><span>Special</span></div></a>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                 <a href="https://goo.gl/maps/ux6E65hHPA4PW7x76" target="_blank"><div id="map-tile"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.370941058005!2d11.731336715658571!3d48.411022479246164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e6ae5f5160daf%3A0xa74afd5bd78dcf6c!2sKreuzeckstra%C3%9Fe%205%2C%2085354%20Freising!5e0!3m2!1sen!2sde!4v1568994246811!5m2!1sen!2sde" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe><span>Map</span></div></a>
+            </div>
+        </div>          
+    </div>
+    <!-- footer--> 
+    <footer class="panel-footer">
+            <div class="container">
+                <div class="row">
+                    <section id="hours" class="col-sm-4">
+                        <span>Hours:</span><br>
+                        <p>Monday-Friday: 10:00 am - 22:00 pm<br>
+                        Saturday: 10:00 am - 23:00 pm<br>
+                        Sunday: 12:00 am - 20 pm<br></p>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="address" class="col-sm-4">
+                        <span>Address:</span><br>
+                        Kreuzeck Straße 5<br>
+                        85354, Freising<br>
+                        Germany<br>
+                        <p>* Delivery area within 3-4 kilometers, with minimum order of 20 euro, outside that area 3 euro per delivery.</p>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="testimonials" class="col-sm-4">
+                        <p>"The best indian resturant in Freising, I have been to! And that's saying a lot, since I have been to many!"</p>
+                        <p>"Amazing food! Great and welcoming staf! Telented cook who knows what coustomer wants and how!"</p>
+                        <p>- Ravikumar Mevada (Food blogger as a hobby and profession)</p>
+                    </section>
+                </div>
+                <div class="text-center">&copy; Copyright The Tiffine Box 2019</div>
+            </div>
+        </footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
